@@ -8,7 +8,7 @@ public class ValidateUserName {
 	public static void main(String[] args) {
 	
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the First Name");
+		/*System.out.println("Enter the First Name");
 		String FirstName = sc.next();
 		boolean b = Pattern.matches("^[A-Z]{1}[a-z]{2,20}$", FirstName);  
 		System.out.println(b);
@@ -16,7 +16,12 @@ public class ValidateUserName {
 		System.out.println("Enter the Last Name");
 		String LastName = sc.next();
 		boolean b1 = Pattern.matches("^[A-Z]{1}[a-z]{2,20}$", LastName);  
-		System.out.println(b1);
+		System.out.println(b1);*/
+		
+		System.out.println("Enter the email");
+		String email = sc.next();
+		boolean b2 = Pattern.matches("^[a-z](.+)@(\\S+)$", email);  
+		System.out.println(b2);
 
 	}
 
