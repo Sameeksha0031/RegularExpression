@@ -8,9 +8,15 @@ public class ValidateUserName {
 	public static void main(String[] args) {
 	
 		Scanner sc = new Scanner(System.in);
-		String userName = sc.next();
-		boolean b3 = Pattern.matches("^[A-Z]{1,20}[A-Za-z]{3,20}$", userName);  
-		System.out.println(b3);
+		System.out.println("Enter the First Name");
+		String FirstName = sc.next();
+		boolean b = Pattern.matches("^[A-Z]{1}[a-z]{2,20}$", FirstName);  
+		System.out.println(b);
+		
+		System.out.println("Enter the Last Name");
+		String LastName = sc.next();
+		boolean b1 = Pattern.matches("^[A-Z]{1}[a-z]{2,20}$", LastName);  
+		System.out.println(b1);
 
 	}
 
