@@ -9,7 +9,7 @@ public class ValidateUserName {
 	
 		Scanner sc = new Scanner(System.in);
 		String userName = sc.next();
-		boolean b3 = Pattern.matches("^[A-Z]{1,20}[A-Za-z]{3,20}$", userName);  
+		boolean b3 = Pattern.matches("^[A-Z]{1,}[A-Za-z]{2,20}$", userName);  
 		System.out.println(b3);
 
 	}
