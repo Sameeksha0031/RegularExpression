@@ -21,12 +21,17 @@ public class ValidateUserName {
 		System.out.println("Enter the email");
 		String email = sc.next();
 		boolean b2 = Pattern.matches("^[a-z](.+)@(\\S+)$", email);  
-		System.out.println(b2);*/
+		System.out.println(b2);
 		
 		System.out.println("Enter the PhoneNumber");
 		String phoneno = sc.nextLine();
 		boolean b3 = Pattern.matches("^([0-9]{2})? ?[0-9]{1}[0-9]{9}$", phoneno);
-		System.out.println(b3);
+		System.out.println(b3);*/
+		
+		System.out.println("Enter the Password");
+		String password = sc.nextLine();
+		boolean b4 = Pattern.matches("^[A-Za-z]{8,15}$", password);
+		System.out.println(b4);
 
 	}
 }
