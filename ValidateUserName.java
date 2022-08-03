@@ -30,7 +30,7 @@ public class ValidateUserName {
 		
 		System.out.println("Enter the Password");
 		String password = sc.nextLine();
-		boolean b4 = Pattern.matches("^[A-Za-z]{8,15}$", password);
+		boolean b4 = Pattern.matches("^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,12}$", password);
 		System.out.println(b4);
 
 	}
